@@ -1,0 +1,6 @@
+#include "CCircle.h"
+#include "CTriangle.h"
+#include "CSquare.h"
+#include "CRectanlge.h"
+#include "CHexagon.h"
+#include "CElipse.h"
