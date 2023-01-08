@@ -2,37 +2,39 @@
 #include "../ApplicationManager.h"
 #include "../GUI/GUI.h"
 #include <sstream>
-ActionPlayWithColor::ActionPlayWithColor(ApplicationManager* pApp) :Action(pApp)
+ActionPlayWithColor::ActionPlayWithColor(ApplicationManager *pApp) : Action(pApp)
 {
 	correct = 0;
 	wrong = 0;
 }
-void ActionPlayWithColor::Execute() {
-	GUI* pGUI = pManager->GetGUI();
-	if (pManager->GetFigtList().size() == 0) { pGUI->PrintMessage("No Figures Found"); return; }
-
+void ActionPlayWithColor::Execute()
+{
+	GUI *pGUI = pManager->GetGUI();
 	int Count = 0;
 	Fig_Color = pManager->GetRandomColor(Count);
-	
-	//FigColor << Fig_Color;
-	if (Fig_Color != UI.BkGrndColor) {
+
+	// FigColor << Fig_Color;
+	if (Fig_Color != UI.BkGrndColor)
+	{
 		stringstream print;
 		print << pManager->Color2String(Fig_Color);
-		pGUI->PrintMessage("Select all " + print.str() + " Figures");	
+		pGUI->PrintMessage("Select all " + print.str() + " Figures");
 		while (Count)
 		{
 			pGUI->GetPointClicked(p.x, p.y);
-			CFigure* r = pManager->GetFigure(p.x, p.y);
+			CFigure *r = pManager->GetFigure(p.x, p.y);
 			if (r != NULL)
 			{
 				if (r->GetFigColor() == Fig_Color)
 				{
-					if (!r->getHiddenValue()) {
-					correct++;
-					Count--;
+					if (!r->getHiddenValue())
+					{
+						correct++;
+						Count--;
 					}
 				}
-				else {
+				else
+				{
 					if (!r->getHiddenValue())
 						wrong++;
 				}
@@ -40,14 +42,12 @@ void ActionPlayWithColor::Execute() {
 				r->show(false);
 				pManager->UpdateInterface();
 
-				pGUI->PrintMessage("Correct Ans = " + to_string(correct) + "                                              "
-					+ "Wrong Ans = " + to_string(wrong) + "                                                 ..CONTINUE!");
+				pGUI->PrintMessage("Correct Ans = " + to_string(correct) + "                                              " + "Wrong Ans = " + to_string(wrong) + "                                                 ..CONTINUE!");
 			}
 
 			else
 			{
-				pGUI->PrintMessage("Correct Ans = " + to_string(correct) + "                                              "
-					+ "Wrong Ans = " + to_string(wrong) + "                  Select a Figure Please");
+				pGUI->PrintMessage("Correct Ans = " + to_string(correct) + "                                              " + "Wrong Ans = " + to_string(wrong) + "                  Select a Figure Please");
 			}
 		}
 		pGUI->PrintMessage("your grade is " + to_string(correct) + "/" + to_string((correct + wrong)));
@@ -65,5 +65,4 @@ void ActionPlayWithColor::Execute() {
 		pGUI->PrintMessage("There aren't any Colored Figures , Select another icon from toolbar ");
 		return;
 	}
-
 }

@@ -1,16 +1,3 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
-  CTriangle.cpp
-C:\Users\Doritoz\Desktop\Paint-for-Kids-Final-master\Figures\CTriangle.cpp(42,12): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-C:\Users\Doritoz\Desktop\Paint-for-Kids-Final-master\Figures\CTriangle.cpp(58,38): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Doritoz\Desktop\Paint-for-Kids-Final-master\Figures\CTriangle.cpp(58,95): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Doritoz\Desktop\Paint-for-Kids-Final-master\Figures\CTriangle.cpp(59,38): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Doritoz\Desktop\Paint-for-Kids-Final-master\Figures\CTriangle.cpp(59,95): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Doritoz\Desktop\Paint-for-Kids-Final-master\Figures\CTriangle.cpp(61,38): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Doritoz\Desktop\Paint-for-Kids-Final-master\Figures\CTriangle.cpp(61,95): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Doritoz\Desktop\Paint-for-Kids-Final-master\Figures\CTriangle.cpp(62,38): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Doritoz\Desktop\Paint-for-Kids-Final-master\Figures\CTriangle.cpp(62,95): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Doritoz\Desktop\Paint-for-Kids-Final-master\Figures\CTriangle.cpp(64,42): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Doritoz\Desktop\Paint-for-Kids-Final-master\Figures\CTriangle.cpp(64,103): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Doritoz\Desktop\Paint-for-Kids-Final-master\Figures\CTriangle.cpp(65,42): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\Doritoz\Desktop\Paint-for-Kids-Final-master\Figures\CTriangle.cpp(65,103): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  ActionPlayWithColor.cpp
   PT-Project.vcxproj -> C:\Users\Doritoz\Desktop\Paint-for-Kids-Final-master\Debug\PT Project.exe
