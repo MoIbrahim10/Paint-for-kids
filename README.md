@@ -88,7 +88,7 @@ The Play Mode supports the following features:
    - Discard all changes made in the Play Mode
 
 ## Sneak peek
-![Demo Gif]([https://i.imgur.com/vKb2F1B.gif](https://media.giphy.com/media/0WQP0zZs2lizNFNJIc/giphy.gif))
+![Demo Gif](https://media.giphy.com/media/0WQP0zZs2lizNFNJIc/giphy.gif)
 
 
 ## Contributing
